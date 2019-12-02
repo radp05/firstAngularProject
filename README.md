@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Added by Author
+This app relies on nodejs server running on port 3006 for authentication.
+
+Logged in user is redirected to dashboard page which has a list of stocks that are always replenishable and provided by an API that fetches data from mongoDB
+
+It is assumed the user has rs 10000 in the wallet.
+
+The user can select list of stocks and edit their quantity accordingly.
+
+Once the user clicks on the "check out" button , user is redirected to cart page
+
+This shows the "buy" button if the wallet balance is sufficient to buy the stocks
+If not, the "buy" button is not displayed and an "insufficient balance" message is displayed.
+
+If the user buys the stocks , the user is then redirected to another page which lists all the purchased stocks.
+
+
