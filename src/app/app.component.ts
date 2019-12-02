@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+// import { NgForm } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from "@angular/forms";
+import {HttpClient} from "@angular/common/http"
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +12,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-app';
+ 
+
+  ngOnInit() {
+  
+  }
+
 }
+

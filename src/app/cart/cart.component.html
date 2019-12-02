@@ -1,0 +1,8 @@
+
+<p>Your wallet balance is {{wallet}}</p>
+<ag-grid-angular #agGrid style="width: 805px; height: 150px;" class="ag-theme-balham" [rowData]="rowData"
+    [columnDefs]="columnDefs" [modules]="modules">
+
+</ag-grid-angular>
+<p *ngIf = "total > wallet">Insufficient Balance</p>
+<button (click)="getSelectedRows()" *ngIf = "total <= wallet">Buy</button>
